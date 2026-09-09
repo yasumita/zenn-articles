@@ -1,0 +1,18 @@
+{
+  "title": "Claude CodeのTips",
+  "closed": false,
+  "archived": false,
+  "created_at": "2026-09-07",
+  "comments": [
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## Claude Codeで今実行しているsessionを一覧化する\n- 過去を含む一覧: セッション内で`/resume`または`claude --resume`\n- 今まさに動いているもののみ: `ps -ax | grep claude`\n"
+    },
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## 処理は中断せずにsessionを閉じる\n`/bg`"
+    }
+  ]
+}

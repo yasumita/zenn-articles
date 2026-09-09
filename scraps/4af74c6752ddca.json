@@ -1,0 +1,24 @@
+{
+  "title": "Windowsのちょっとしたコマンド",
+  "closed": false,
+  "archived": false,
+  "created_at": "2026-09-07",
+  "comments": [
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## ファイルの種類 (例: pdf) を限定してフォルダ内のファイルのサイズの合計を調べる\n\n```PowerShell\nGet-ChildItem -Recurse -Filter *.pdf | Measure-Object -Property Length -Sum | Select-Object @{Name=\"Total_MB\"; Expression={[math]::round($_.Sum / 1MB, 2)}}\n```\n\n### フォルダの種類別一覧\n\n```PowerShell\nGet-ChildItem -Recurse -File | Group-Object Extension | Select-Object Name, @{Name=\"Count\"; Expression={$_.Count}}, @{Name=\"Total_MB\"; Expression={[math]::round(($_.Group | Measure-Object -Property Length -Sum).Sum / 1MB, 2)}} | Sort-Object Total_MB -Descending\n```",
+      "body_updated_at": "2026-09-07"
+    },
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## ファイルの種類 (例: md) を限定してフォルダ内のファイルのサイズを一覧\n\n```PowerShell\nGet-ChildItem -Recurse -Filter *.md | Select-Object FullName, @{Name=\"Size(KB)\";Expression={[math]::round($_.Length / 1KB, 2)}} | Out-GridView\n```"
+    },
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## フォルダ内にあるすべてのファイルの種類の一覧を調べる\n\n```PowerShell\nGet-ChildItem -File -Recurse | Group-Object Extension | Select-Object Name, Count\n```"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "環境・運用方針について",
+  "closed": false,
+  "archived": false,
+  "created_at": "2026-09-07",
+  "comments": [
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## ブログ・技術記事\n\n- Zenn: 技術的な話・論文メモ\n- はてなブログ: 気持ち的な話（技術の話もするかも）"
+    },
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## 文献管理\n\n- Zotero: 少しでも気になった・必要になった文献は追加する（図書館のイメージ）\n- Obisidian: 程度を問わず読んだ論文はメモを記録しておき、Dataviewで一覧化"
+    },
+    {
+      "author": "yasumita",
+      "created_at": "2026-09-07",
+      "body_markdown": "## SNS\n\n考え中..."
+    }
+  ]
+}
