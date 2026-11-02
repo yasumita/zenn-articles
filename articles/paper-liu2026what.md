@@ -1,5 +1,5 @@
 ---
-title: "What Do Language Models Learn and When? The Implicit Curriculum Hypothesis (COLM 2026)"
+title: "The Implicit Curriculum Hypothesis (COLM 2026)"
 emoji: "🧑‍🏫"
 type: "idea"
 topics:
