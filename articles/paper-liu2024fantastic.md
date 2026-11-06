@@ -1,5 +1,5 @@
 ---
-title: "Investigating Which Layers of Generative LLMs Reflect Lexical Semantics (ACL 2024)"
+title: "Fantastic Semantics and Where to Find Them (ACL 2024)"
 emoji: "🔍"
 type: "idea"
 topics:
